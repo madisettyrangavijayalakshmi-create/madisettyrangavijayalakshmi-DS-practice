@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct student
+{
+	int ID;
+	char name[10];
+	float salary;
+}E1={101,"vijaya",79.9},E2;
+int main()
+{
+	struct employee E3={103,"varun",77.9},E4;
+	E2.ID = 102;
+	strcpy(E2.name,"sowmya");
+	E2.salary=80.90;
+	printf("enter E4 ID");
+	scanf("%d",&E4.ID);
+	printf("enter E4 name");
+	scanf("%s",&E4.name);
+	printf("enter E4 salary");
+	scanf("%f",&E4.salary);
+	printf("employee details are:\n");
+	printf("\n %d %s %f",E1.ID,E1.name,E1.salary);
+	printf("\n %d %s %f",E2.ID,E2.name,E2.salary);
+	printf("\n %d %s %f",E3.ID,E3.name,E3.salary);
+	printf("\n %d %s %f",E4.ID,E4.name,E4.salary);
+	return 0;
+}
