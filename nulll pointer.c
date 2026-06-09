@@ -1,0 +1,10 @@
+#include<Stdio.h>
+int main()
+{
+	int a=10;
+	int *p=NULL;
+	if(p == NULL)
+	p= &a;
+	printf("value of p=%d",*p);
+	return 0;
+}
